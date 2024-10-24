@@ -1,77 +1,299 @@
 <!DOCTYPE html>
 <html lang="no" class="html-locale-no">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mathematical Modeling and Data Science program at OsloMet">
-    <title>Matematisk modellering og datavitenskap - ingeniør - OsloMet</title>
-    <link href="styles.css" rel="preload" as="style" />
+    <title>Oslomet - Home</title>
 
+    <!-- CSS link -->
+    <link href="styles.css" type="text/css" rel="stylesheet">
 
-  </head>
+    <!-- Fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
 <body>
-    <header>
-       <nav>
-            <div class="logo">
-               <a href="#">OsloMet</a>
-            </div>
-            <ul class="menu">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Activity</a></li>
-                <li><a href="#">Accessibility</a></li>
-               <li><a href="#">Github</a></li>
-           </ul>
-       </nav>
+   <!-- header -->
+<!-- https://codepen.io/jo_Geek/pen/xgbaEr (Referanse) -->
+<header class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+        <a href="index.html"><img src="images/logo.svg" class="logo" alt="logo"></a>
+    </div>
+    <div class="nav-btn">
+        <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="activity.html">Activity</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="github.html">GitHub</a>
+    </div>
     </header>
 
-    <section class="program-overview">
-              <div class="container">
-                  <h2>Program</h2>
-                 <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
-                  <ul>
-                     <li>Varighet 3 år</li>
-                      <li>Start dato: august 2024</li>
-                 </ul>
-              </div>
-          </section>
+ <!-- Hero Section -->
+<main class="hero-section">
+    <div class="grid-row">
+        <div class="or-1">
+            <img src="images/thumbnail.jpeg" class="hero-image" alt="image">
+        </div>
+        <div class="or-2">
+            <h3 class="sub-head">Bachelorprogram</h3>
+            <h1 class="heading">Matematisk modellering og datavitenskap ingeniør
+            </h1>
+            <p class="text-1">Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.
+            </p>
+        </div>
+    </div>
+</main>
 
-          <section class="Hvorfor oss">
-                   <div class="container">
-                        <h2>Hvorfor velge oss?</h2>
-                        <div class="cards">
-                           <div class="card">
-                               <h3>Fremtidsrettet pensum</h3>
-                                <p>Vårt pensum er utformet for å holde tritt med de nyeste trendene innen datavitenskap og matematisk modellering.</p>
-                           </div>
-                            <div class="card">
-                                <h3>Praktiske prosjekter</h3>
-                                <p>Få praktisk erfaring gjennom virkelige prosjekter og samarbeid med bransjeeksperter.</p>
-                            </div>
-                            <div class="card">
-                                <h3>Globale muligheter</h3>
-                               <p>Samarbeid med studenter fra hele verden og forbered deg på en internasjonal karriere.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+<!-- Section 2 - about -->
+<section class="section-2">
+    <div class="sec-2-flex">
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Oslo</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-clock"></i>
+            <p>3 år</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <p>40</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p>180</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <p>Heltid</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-play"></i>
+            <p>Stuediestart - August</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-globe"></i>
+            <p>Norsk&Englesk</p>
+        </div>
+    </div>
+</section>
 
-                <footer>
-                   <div class="footer-container">
-                              <div class="footer-column">
-                                 <h3>Oslo Metropolitan University</h3>
-                                 <ul>
-                                      <li><a href="#">Storbyuniversitetet </a></li>
-                                      <li><a href="#">Postboks 4, St. Olavs plass 0130 Oslo</a></li>
-                                     </li>
-                                      <li><a href="#"> Tlf.: 67 23 50 00</a></li>
-                                          </a></li>
-                                      <li><a href="#">Kontakt Oss</a></li>
-                                      <li><a href="#">Find Us</a></li>
-                                  </ul>
-                              </div>
-                             <div class="footer-column">
-                                 <h3>Finne oss</h3>
-                                  <ul>
-                                     <li><a href="#">Facebook</a>https://www.facebook.com/OsloMetIL/?locale=nb_NO</li>
-                                      <li><a href="#">Twitter</a></li>
-                                      <li><a href="#">Linkedin</a></li>
+<!-- Program Structure -->
+<section class="program-structure">
+    <div class="structure-div">
+        <h2>Studiets oppbygging</h2>
+        
+        <table>
+            <thead>
+            <tr>
+                <th>1. år <br> <span>60 stp.</span></th>
+                <th>2. år <br> <span>60 stp.</span></th>
+                <th>3. år <br> <span>60 stp.</span></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="autumn">Høst</td>
+                <td class="autumn">Høst</td>
+                <td class="autumn">Høst</td>
+            </tr>
+            <tr>
+                <td>Diskret matematikk<br> <span>10 stp.</span></td>
+                <td>Matematikk 2000 med statistikk <br> <span>10 stp.</span></td>
+                <td>Matematikk 3000 <br> <span>5 stp.</span></td>
+                
+            </tr>
+            <tr>
+                <td>Programmering <br> <span>10 stp.</span></td>
+                <td>Moderne fysikk <br> <span>7,5 ECTS</span></td>
+                <td>Bacheloroppgave <br> <span>30 ECTS</span></td>
+            </tr>
+            <tr>
+                <td class="autumn">Spring</td>
+                <td class="autumn">Spring</td>
+                <td class="autumn">Spring</td>
+            </tr>
+            <tr>
+                <td>Matematikk 3000 <br> <span>5 stp.</span></td>
+                <td>Matematikk 4000 <br> <span>5 stp.</span></td>
+                <td>Reel analyse <br> <span>5 stp.</span></td>
+            </tr>
+            <tr>
+                <td>Innføring i modeller og beregninger <br> <span>5 stp.</span></td>
+                <td>Linenær algebra og introduksjon til gruppeteori <br> <span>5 stp.</span></td>
+                <td>Introduksjon til IT-forskning <br> <span>5 stp.</span></td>
+            </tr>
+
+            <tr>
+                <td>Matematikk 1000 <br> <span>5 stp.</span></td>
+                <td>Termodynamikk og statistisk fysikk <br> <span>5 stp.</span></td>
+                <td>Introduction to Data Science with Scripting <br> <span>5 stp.</span></td>
+            </tr>
+
+            <tr>
+                <td>Fysikk og kjemi<br> <span>5 stp.</span></td>
+                <td>Symmetrier og algebraiske strukturer <br> <span>5 stp.</span></td>
+                <td>Datasikkerhet <br> <span>5 stp.</span></td>
+            </tr>
+
+            <tr>
+                <td>Databaser <br> <span>5 stp.</span></td>
+                <td>Algoritmer og datastrukturer <br> <span>5 stp.</span></td>
+                <td>Simulering og visualisering <br> <span>5 stp.</span></td>
+
+            </tr>
+
+            <tr>
+                <td>Databaser <br> <span>5 stp.</span></td>
+                <td>Statistisk analyse <br> <span>5 stp.</span></td>
+                <td>Introduksjon til Kunstig Intelligens <br> <span>5 stp.</span></td>
+
+            </tr>
+
+            <tr>
+                <td>Databaser <br> <span>5 stp.</span></td>
+                <td>Visualisering <br> <span>5 stp.</span></td>
+                <td>Anvendt kunstig intelligens og data science projekt<br> <span>5 stp.</span></td>
+
+            </tr>
+
+            <tr>
+                <td>Databaser <br> <span>5 stp.</span></td>
+                <td>Ressureffektive programmer<br> <span>5 stp.</span></td>
+                <td>Testing av programvare<br> <span>5 stp.</span></td>
+
+            </tr>
+              </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Student Stories -->
+<section class="story">
+    <h2 class="heading-2">Studenthistorier</h2>
+    <div class="story-div">
+        <img src="images/story.jpg" class="story-image" alt="image">
+        <div class="story-content">
+            <h5>Teknologi og design</h5>
+            <h2>Spå fremtiden med matematikk og datavitenskap</h2>
+            <p>Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å fortusi alt fra været og strømprisene til utviklingen i boligmarkedet.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- You might also be interested in these? -->
+<section class="interested">
+    <h2 class="heading-2">Du er kanskje også interessert i disse?</h2>
+    <div class="interest-grid">
+        <div>
+            <img src="images/c.webp" class="i-image" alt="image">
+            <h4>Anvendt datateknologi</h4>
+            <ul>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Bachelorprogram</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;3 år</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Pilestredet i Oslo</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Heltid</li>
+            </ul>
+        </div>
+        <div>
+            <img src="images/bc.webp" class="i-image" alt="image">
+            <h4>Bioteknologi-og kjemiingeniør</h4>
+            <ul>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Bachelorprogram</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;3 år</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Pilestredet i Oslo</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Heltid</li>
+            </ul>
+        </div>
+        <div>
+            <img src="images/ce.webp" class="i-image" alt="image">
+            <h4>Byggingeniør</h4>
+            <ul>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Bachelorprogram</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;3 år</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Pilestredet i Oslo</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Heltid</li>
+            </ul>
+        </div>
+        <div>
+            <img src="images/ee.webp" class="i-image" alt="image">
+            <h4>Elektronikkingeniør</h4>
+            <ul>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Bachelorprogram</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;3 år</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Pilestredet i Oslo</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Heltid</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Questions about the education? -->
+<section class="contact">
+    <div class="contact-div">
+        <h2>Spørsnmål om utdanningen?</h2>
+        <p>Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.
+        </p>
+        <div class="contact-grid">
+            <div>
+                <img src="images/supervisor.jpeg" class="contact-image" alt="image">
+            </div>
+            <div>
+                <h3>Faglig leder</h3>
+                <h4>Kristoffer Herland Hellton</h4>
+                <h5>førsteamanuensis</h5>
+                <ul>
+                    <li><a href="tel:+4767237240">+47 672 37 240</a></li>
+                    <li><a href="mailto:kristoffer.hellton@oslomet.no">kristoffer.hellton@oslomet.no</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div>
+            <h3>Oslo Metropolitan University</h3>
+            <ul>
+                <li>PO Box 4, St. Olavs plass</li>
+                <li>0130 Oslo</li>
+                <li>Tel.: <a href="tel:67235000">67 23 50 00</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.oslomet.no/en">English</a></li>
+                <li><a href="https://www.oslomet.no/alumni">Alumni</a></li>
+                <li><a href="https://www.oslomet.no/om/ansatteoversikt">Ansatteoversikt</a></li>
+                <li><a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt">Arrangementoversikt</a></li>
+                <li><a href="https://www.oslomet.no/om/for-ansatte">For Ansatte</a></li>
+                <li><a href="https://www.oslomet.no/om/for-studenter">For studenter</a></li>
+                <li><a href="https://www.oslomet.no/om/ledige-stillinger">Ledige stillinger</a></li>
+                <li><a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæringer og informasjonskapslar</a></li>
+                <li><a href="https://www.oslomet.no/om/pressekontakt">Pressekontakt</a></li>
+                <li><a href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjengelegheitserklæring</a></li>
+                <li><a href="https://www-admin.oslomet.no/admin/view/content/58148">Admin</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/oslomet/"><i class="fa-brands fa-square-facebook"></i>&nbsp;&nbsp;Facebook</a></li>
+                <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Foslomet"><i class="fa-brands fa-square-x-twitter"></i>&nbsp;&nbsp;X (Twitter)</a></li>
+                <li><a href="https://www.linkedin.com/school/oslomet/posts/?feedView=all"><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/oslomet/?hl=nb"><i class="fa-brands fa-square-instagram"></i>&nbsp;&nbsp;Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
