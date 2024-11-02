@@ -1,4 +1,150 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oslomet - Activity</title>
+
+    <!-- CSS File LINKING -->
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <!-- Fontawesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+    <!-- https://codepen.io/jo_Geek/pen/xgbaEr (Reference) -->
+    <header class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <a href="index.html"><img src="images/logo.svg" class="logo" alt="logo"></a>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    
+      <div class="nav-links">
+        <a href="index.html">Hjem</a>
+        <a href="activity.html">Aktiviteter</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="github.html">GitHub</a>
+      </div>
+    </header>
+    <!-- Main section -->
+<main class="main-section-activity">
+    <div class="activity-div">
+      <h1>Aktiviteter</h1>
+      <p>Opplev alt det gøyale Oslo har å by på for studenter!
+        <br>
+        Det skjer alltid noe spennende her! Enten du er ute etter nye venner, 
+        vil lære noe helt nytt, eller bare vil ha det skikkelig moro, har vi aktiviteter for alle og enhver. 
+      </p>
+      <!-- a href="#explore" class="button-1">Explore now</-a --> <!--这段删掉了不知道是否有用 再把css内的删掉-->
+    </div>
+  </main>
+  
+  <!-- Arrangementoversikt -->
+<div class="activity-section" id="explore"> <!-- 这里要改一下- hobby 和 explore -->
+    <div>
+      <div class="p-div">
+        <div class="c-div">
+          <h2>Arrangementer Oslomet</h2>
+          <p>Gjør deg klar for et semester fylt med spennende arrangementer hos OsloMet! 
+            🎉 Enten du vil delta på inspirerende foredrag, delta i workshops, eller kaste deg ut i sosiale sammenkomster, har vi noe for alle. 
+            Dette er muligheten til å møte nye mennesker, utvide horisonten, og kanskje oppdage en ny lidenskap. Hold av datoene, inviter vennene dine, 
+            og bli med på opplevelser som gjør studietiden uforglemmelig! Vi sees der – det blir episk!
+            <br>
+             <a href="https://student.oslomet.no/hva-skjer" target="_blank">Arrangementoversikt</a></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="p-div">
+        <div class="c-div">
+          <img src="images/Oslo aktivitet.jpg" class="activity-image" alt="image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Student forrening -->
+<div class="activity-section">
+  <div class="or-1">
+    <div class="p-div">
+      <div class="c-div">
+        <img src="images/studentforening.png" class="activity-image" alt="OSLOMEt studenter med gul oslomet t-sjorte">
+      </div>
+    </div>
+  </div>
+  <div class="or-2">
+    <div class="p-div">
+      <div class="c-div">
+        <h2>Studentforreninger</h2>
+        <p>Har du lyst på verdifull erfaring, venner for livet og en mye morsommere studietid? Da bør du melde deg inn i en av studentforeningene våre!
+          <a href="https://student.oslomet.no/bli-med-studentforening" target="_blank">Her kan du se alle studentforeningen som finnes ved OsloMet.</a>  
+          <a href="https://student.oslomet.no/studentforeninger" target="_blank">Eller mer informasjon her. </a>
+        </p>       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SIO Aktivitets kalander -->
+<div class="activity-section">
+  <div>
+    <div class="p-div">
+      <div class="c-div">
+        <h2>Mer aktiviteter i SIO </h2>
+        <p>Få med deg arrangementer og aktiviteter for deg som er student i Oslo.
+          SiO sin eventkalender samler et bredt utvalg arrangementer for studenter i Oslo, 
+          inkludert både faglige og sosiale aktiviteter. 
+          Det finnes inneholder workshops, kurs, konserter og kulturarrangementer i forskjelige tidspunkt. 
+          Studentene kan finne tilbud som yoga, språkkafeer, karrieredager og mer, designet for å skape fellesskap, støtte trivsel og utvikle ferdigheter. 
+          Her finner du oversikt over eventer og aktiviteter for studenter i Oslo.
+          <a href="https://www.sio.no/eventkalender" target="_blank"> SIO Eventkalander</a></p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="p-div">
+      <div class="c-div">
+        <img src="images/sioevents.jpg" class="activity-image" alt="Bilder med forskjelige aktiviteter som finnes på SIO events kalander,">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Trening -->
+<div class="activity-section">
+  <div class="or-1">
+    <div class="p-div">
+      <div class="c-div">
+        <img src="images/siotrening.jpg" class="activity-image" alt="image">
+      </div>
+    </div>
+  </div>
+  <div class="or-2">
+    <div class="p-div">
+      <div class="c-div">
+        <h2>Trening</h2>
+        <p>SiO Athletica har Oslos bredeste treningstilbud med blant annet svømming og gruppetrening inkludert i medlemskapet. 
+          Visste du at de er en treningskjede for alle? Som student har du en ekstra god pris hos SIO.
+          Her finner du mer informasjon.
+          <a href="https://www.sio.no/trening" target="_blank">SIO Trening</a> 
+          <a href="www.sio.no/trening/bli-medlem" target="_blank">Her kan du bli medlem</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="activity-footer">
+  <p>&copy; Copyright 2024. All Rights Reserved.</p>
+</footer>
+</body>
 </head>
