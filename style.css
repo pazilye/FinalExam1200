@@ -1,4 +1,4 @@
-/* Acitivity page global stilreset for alle elementer */
+/* Acitivity page fellestill for alle elementer */
 * {
     margin: 0;
     padding: 0;
@@ -46,9 +46,7 @@ body {
 
 /* Sentral aktivitetstekst-div */
 .activity-div {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    padding: 1rem;
 }
 
 .activity-div h1 {
@@ -71,7 +69,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Svak skygge for dybdeeffekt */
     margin: 20px auto;
     max-width: 800px; /* Begrenset bredde for sentrert innhold */
-    text-align: center;
 }
 
 /* Stil for individuelle aktivitetsposter */
@@ -110,13 +107,10 @@ body {
     color: #3498db;
     text-decoration: center;
     font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.activity-item a:hover {
-    text-align: center;
+    font-size: 1.3rem;
     text-decoration: underline; /* Understrekning ved hover */
 }
+
 
 /* Footer stil */
 .activity-footer {
@@ -125,9 +119,6 @@ body {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-}
-
-.activity-footer p {
     font-size: 0.9rem;
 }
 
