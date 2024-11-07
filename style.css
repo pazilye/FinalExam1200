@@ -1,0 +1,142 @@
+/* Acitivity page fellestill for alle elementer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Activity Body-stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Lys blå bakgrunn */
+    color: #00192C; /* Mørk tekstfarge for god kontrast */
+}
+
+/* Header stil - navigasjonsmeny (kan fjernes hvis ikke nødvendig) */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3498db; /* Lys bakgrunn for toppmenyen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lett skygge for dybdeeffekt */
+}
+
+.nav .logo img {
+    width: 50px; /* Justerer logo-størrelse */
+}
+
+.nav .nav-links a {
+    color: #fefefe; /* Blå farge for lenker */
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav .nav-links a:hover {
+    text-decoration: underline; /* Understrekning ved hover */
+}
+
+/* Hovedinnhold stil */
+.main-section-activity {
+    padding: 60px 20px;
+    background-color: #ffffff; /* Blå bakgrunn for hovedseksjonen */
+    text-align: center;
+}
+
+/* Sentral aktivitetstekst-div */
+.activity-div {
+    padding: 1rem;
+}
+
+.activity-div h1 {
+    font-size: 2.5rem;
+    color: #00192C; /* Mørk blå farge for hovedoverskrift */
+    margin-bottom: 1rem;
+}
+
+.activity-div p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #34495e; /* Gråfarge for paragraftekst */
+}
+
+/* Stil for hver aktivitetseksjon */
+.activity-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Svak skygge for dybdeeffekt */
+    margin: 20px auto;
+    max-width: 800px; /* Begrenset bredde for sentrert innhold */
+}
+
+/* Stil for individuelle aktivitetsposter */
+.activity-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Avstand mellom elementene */
+}
+
+.activity-item h2 {
+    font-size: 1.8rem;
+    color: #2980b9; /* Blå farge for underoverskrifter */
+    margin-bottom: 1rem;
+}
+
+.activity-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #34495e;
+    text-align: center; /* Venstrejustert tekst */
+}
+
+/* Stil for aktivitet bilder */
+.activity-image {
+    width: 100%;
+    max-width: 400px; /* Maks bredde for bilder */
+    height: auto;
+    border-radius: 8px; /* Runde hjørner på bilder */
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Legger til skygge rundt bilder */
+}
+
+/* Stil for lenker i aktivitetstekst */
+.activity-item a {
+    color: #3498db;
+    text-decoration: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: underline; /* Understrekning ved hover */
+}
+
+
+/* Footer stil */
+.activity-footer {
+    background-color: #00192C; /* Mørk blå bakgrunn for footer */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsivt design for mindre skjermer */
+@media (max-width: 767px) {
+    .main-section-activity {
+        padding: 40px 20px; /* Mindre topp- og bunn-padding på små skjermer */
+    }
+
+    .activity-div h1 {
+        font-size: 2rem; /* Reduserer hovedoverskriftstørrelse for mobil */
+    }
+
+    .activity-item h2 {
+        font-size: 1.5rem; /* Reduserer underoverskriftstørrelse for mobil */
+    }
+
+    .activity-item p {
+        font-size: 0.95rem; /* Mindre tekst for små skjermer */
+    }
+}
