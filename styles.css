@@ -1,4 +1,14 @@
-/* Index page */
+/* Universell boksstørrelse for å inkludere polstring i bredden*/
+* {
+    box-sizing: border-box;
+}
+
+/* Generell overløp-x skjult på kroppen for å hindre horisontal rulling */
+body {
+    overflow-x: hidden;
+}
+
+/* hjemmeside */
 /* Header */
 .nav {
     width: 100%;
@@ -18,7 +28,7 @@
 }
 .nav-links {
     display: inline;
-    float: right;
+    text-align: right;
     font-size: 18px;
 }
 .nav-links a {
@@ -34,7 +44,7 @@
 /* Hero Section  */
 .hero-section{
     background-color: #00192C;
-    padding: 80px 40px;
+    box-sizing: border-box;
 }
 .grid-row{
     display: grid;
@@ -408,6 +418,39 @@ table th span , table td span{
 }
 
 /* Index page - end */
+
+
+/* Github page */
+
+/* Student Story */
+
+.github{
+    max-width: 50%;
+    margin: 40px auto;
+}
+.heading-2{
+    font-size: 36px;
+    text-align: center;
+}
+.story-image{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.story-content{
+    background-color: #E1EFF4;
+    padding: 40px;
+    margin-top: -5px;
+}
+.story-content h5{
+    font-size: 18px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+}
+.story-content h2{
+    margin-top: 30px;
+}
+
 
 
 
