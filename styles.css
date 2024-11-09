@@ -423,8 +423,6 @@ table th span , table td span{
 
 /* Github page */
 
-/* Student Story */
-
 .github{
     max-width: 50%;
     margin: 40px auto;
@@ -433,7 +431,7 @@ table th span , table td span{
     font-size: 36px;
     text-align: center;
 }
-.story-image{
+.github-image{
     width: 100%;
     height: auto;
     margin-top: 20px;
@@ -451,6 +449,8 @@ table th span , table td span{
 .story-content h2{
     margin-top: 30px;
 }
+
+/* Github - end */
 
 
 
