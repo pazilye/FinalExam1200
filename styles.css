@@ -248,6 +248,35 @@ table th span , table td span{
     text-decoration: none;
 }
 
+/* Github Page */
+.github{
+    max-width: 50%;
+    margin: 40px auto;
+}
+.github-image {
+    width: 100%; /* 将图片宽度设置为 section 的宽度 */
+    height: auto;
+}
+.github-content{
+    background-color: #E1EFF4;
+    padding: 40px;
+    margin-top: -5px;
+}
+.github-content h2{
+    margin-top: 30px;
+}
+
+.github-sections {
+    display: flex;
+    justify-content: center; /* 居中对齐 */
+    gap: 20px; /* 设置两个 section 之间的间距 */
+}
+
+.github {
+    width: 45%; /* 每个 section 占据父容器宽度的45% */
+}
+
+
 /* Footer */
 .footer{
     background-color: #00192C;
