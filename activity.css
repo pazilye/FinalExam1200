@@ -9,7 +9,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff; /* Lys blå bakgrunn */
-    color: #00192C; /* Mørk tekstfarge for god kontrast */
 }
 
 /* Header stil - navigasjonsmeny (kan fjernes hvis ikke nødvendig) */
@@ -18,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #3498db; /* Lys bakgrunn for toppmenyen */
+    background-color: #b95000; /* Lys bakgrunn for toppmenyen */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lett skygge for dybdeeffekt */
 }
 
@@ -27,7 +26,7 @@ body {
 }
 
 .nav .nav-links a {
-    color: #fefefe; /* Blå farge for lenker */
+    color: #00192C; /* Blå farge for lenker */
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.1rem;
@@ -40,7 +39,7 @@ body {
 /* Hovedinnhold stil */
 .main-section-activity {
     padding: 60px 20px;
-    background-color: #ffffff; /* Blå bakgrunn for hovedseksjonen */
+    background-color: #fefefe; /* Blå bakgrunn for hovedseksjonen */
     text-align: center;
 }
 
@@ -114,12 +113,23 @@ body {
 
 /* Footer stil */
 .activity-footer {
+    padding: 60px 40px;
     background-color: #00192C; /* Mørk blå bakgrunn for footer */
     color: white;
     text-align: center;
-    padding: 1rem;
     margin-top: 2rem;
     font-size: 0.9rem;
+
+}
+
+.activity-footer ul{
+    list-style: none;
+    padding: 0;
+    line-height: 35px;
+}
+.activity-footer ul li a{
+    color: white;
+    text-decoration: none;
 }
 
 /* Responsivt design for mindre skjermer */
