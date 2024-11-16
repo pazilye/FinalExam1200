@@ -277,8 +277,8 @@ table th span , table td span{
 }
 
 /* Typography */
-.github-content h2,
-.accessibility-content h2 {
+.github-content h3,
+.accessibility-content h3 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
     color: #333;
