@@ -254,31 +254,38 @@ table th span , table td span{
     max-width: 50%;
     margin: 40px auto;
 }
+.github-div,
+.accessiblity-div {
+    padding: 1rem;
+}
 .github-image,
 .accessibility-image {
-    width: 100%; /* 将图片宽度设置为 section 的宽度 */
+    width: 100%; 
     height: auto;
+    margin-top: 20px;
 }
 .github-content,
-.accesibility-content{
+.accessibility-content{
     background-color: #E1EFF4;
     padding: 40px;
     margin-top: -5px;
 }
-.github-content h2{
+.github-content h2, 
+.accessbility-content h2 {
     margin-top: 30px;
 }
 
 .github-sections,
 .accessibility-sections {
     display: flex;
-    justify-content: center; /* 居中对齐 */
-    gap: 20px; /* 设置两个 section 之间的间距 */
+    flex-wrap: wrap; /* Tillater bryting av linjer */
+    justify-content: center; /* Sentrerer innholdet */
+    gap: 20px; /* Avstand mellom seksjoner */
 }
 
 .github,
-.accesibility {
-    width: 45%; /* 每个 section 占据父容器宽度的45% */
+.accessibility {
+    width: 45%; 
 }
 
 
@@ -454,40 +461,6 @@ table th span , table td span{
 }
 
 /* Index page - end */
-
-
-/* Github page , accessibility page*/
-
-.github,
-.accesibility{
-    max-width: 50%;
-    margin: 40px auto;
-}
-.heading-2{
-    font-size: 36px;
-    text-align: center;
-}
-.github-image,
-.accessibility-image{
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-.story-content{
-    background-color: #E1EFF4;
-    padding: 40px;
-    margin-top: -5px;
-}
-.story-content h5{
-    font-size: 18px;
-    border-bottom: 2px solid black;
-    display: inline-block;
-}
-.story-content h2{
-    margin-top: 30px;
-}
-
-/* Github - end , accesibility page*/
 
 
 
