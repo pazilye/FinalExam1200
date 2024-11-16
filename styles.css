@@ -248,42 +248,59 @@ table th span , table td span{
     text-decoration: none;
 }
 
-/* Github Page */
-.github,
-.accessiblity{
-    max-width: 50%;
-    margin: 40px auto;
-}
-.github-div,
-.accessiblity-div {
-    padding: 1rem;
-}
-.github-image,
-.accessibility-image {
-    width: 100%; 
-    height: auto;
-    margin-top: 20px;
-}
-.github-content,
-.accessibility-content{
-    background-color: #E1EFF4;
-    padding: 40px;
-    margin-top: -5px;
-}
-
-.github-sections,
-.accessibility-sections {
-    display: flex;
-    flex-wrap: wrap; /* Tillater bryting av linjer */
-    justify-content: center; /* Sentrerer innholdet */
-    gap: 20px; /* Avstand mellom seksjoner */
-}
-
+/* Github Page, accessibility page */
 .github,
 .accessibility {
-    width: 45%; 
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
+/* Card container */
+.github-content,
+.accessibility-content {
+    background-color: #E1EFF4;
+    border-radius: 8px;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.github-image,
+.accessibility-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1.5rem;
+    
+}
+
+/* Typography */
+.github-content h2,
+.accessibility-content h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.github-content p,
+.accessibility-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+/* Grid layout */
+.github-sections,
+.accessibility-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
 
 
 /* Footer */
@@ -454,6 +471,19 @@ table th span , table td span{
     .contact-grid{
         min-width: 100%;
     }
+
+    @media (max-width: 768px) {
+        .github-sections,
+        .accessibility-sections {
+            grid-template-columns: 1fr; /* Stack on mobile */
+        }
+        
+        .github-image,
+        .accessibility-image {
+            min-height: 250px;
+        }
+    }
+    
 }
 
 /* Index page - end */
