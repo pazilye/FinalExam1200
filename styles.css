@@ -262,6 +262,7 @@ table th span , table td span{
 .accessibility-image {
     width: 100%; 
     height: auto;
+    margin-top: 20px;
 }
 .github-content,
 .accessibility-content{
@@ -277,8 +278,9 @@ table th span , table td span{
 .github-sections,
 .accessibility-sections {
     display: flex;
-    justify-content: center; 
-    gap: 20px; 
+    flex-wrap: wrap; /* Tillater bryting av linjer */
+    justify-content: center; /* Sentrerer innholdet */
+    gap: 20px; /* Avstand mellom seksjoner */
 }
 
 .github,
