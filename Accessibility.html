@@ -1,128 +1,60 @@
 <!DOCTYPE html>
-<html lang="no" class="html-locale-no">
-
+<html lang="no">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="accessibility">
-    <!-- Tag for å håndtere skjermstørrelse og responsivt design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessibility</title>
-    <link rel="styles.css" href="styles.css">
-    <!-- Ikoner til sosiale medier i footer -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Oslomet - Accessibility</title>
+
+    <!-- CSS File LINKING -->
+    <link href="styles.css" type="text/css" rel="stylesheet">
+
+    <!-- Fontawesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+<body>
+<!-- header -->
+<!-- https://codepen.io/jo_Geek/pen/xgbaEr (Reference) -->
+<header class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+        <a href="index.html"><img src="images/logo.svg" class="logo" alt="logo"></a>
+    </div>
+    <div class="nav-btn">
+        <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
 
-<!-- 
-    Denne siden skal ikke være helt lik de andre, så den har en del egen styling.
-    Må derfor gi klasser til "generelle elementer" som bla. body, hvor man kanskje 
-    normalt bare hadde brukt elementet som selektor.
-    -->
-    <body class="body-accessibility">
-        <header class="header-accessibility">
-            <nav class="nav-accessibility">
-                <div>
-                    <a href="../index.html"><img class="logo-pic" 
-                        src="https://kommunikasjon.ntb.no/data/images/00339/dcb25c97-e530-4d45-804e-4883a9a9ce9d.png" 
-                        alt="Bilde av Oslomets logo">
-                    </a>
-                </div>
-                <!-- Hamburger-meny med dropdown -->
-                <label class="label-accessibility" for="menu-toggle">
-                    <div class="menu-icon-accessibility"></div>
-                </label>
-                <div class="nav-links">
-                    <button class="dropbutton">&#9776;</button>
-                    <div class="dropdown-content">
-                        <a href="index.html">Forside</a>
-                        <a href="activity.html">Aktivitet</a>
-                        <a href="accessibility.html">Auccessibility</a>
-                        <a href="github.html">GitHub</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+    <div class="nav-links">
+        <a href="index.html">Forside</a>
+        <a href="activity.html">Aktivitet</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="github.html">GitHub</a>
+    </div>
+</header>
 
+<section class="accessibility">
+    <h2 class="heading-2">Studenthistorier</h2>
+    <div class="story-div">
+        <img src="images/story.jpg" class="story-image" alt="image">
+        <div class="story-content">
+             <h2>Spå fremtiden med matematikk og datavitenskap</h2>
+               <p>Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å fortusi alt fra været og strømprisene til utviklingen i boligmarkedet.
+            </p>
+            <h5>Teknologi og design</h5>
+        </div>
+    </div>
+</section>
 
-        <main class="main-accessibility">
-            <h1>Accessibility</h1>
-            <div class="info">
-                <p>In modern web design, focusing on accessibility and applying universal design principles are essential. 
-                    As web designers, we have a responsibility to create experiences that are inclusive for all users. 
-                    Explore the articles below to learn more about our choices and considerations regarding accessibility, universal design, and responsive design.
-                </p>  
-            </div>
-            <!-- Article-element som holder hovedteksten -->
-            <article>
-                <!-- Flexbox-container med fire like bokser med bilde og tekst -->
-                <div class="article-container">
-                    <!-- Flex-box med bilde og tekst --> 
-                    <div class="accessibility-box-1">
-                        <h2>Usability and Accessibility</h2>
-                        <img class="pictures-accessibility" src="../bilder/resultat-test.png" 
-                            alt="Screenshot of a Lighthouse-test with the score 100 on accessibility" 
-                            title="Photo: Private screenshot, 20.11.23">
-                        <figcaption class="figcaption-accessibility">Result from a Lighthouse Test of our index.html. 
-                            Photo: Private</figcaption>
-                        <p class="text">Our main objective for this website was to make it usable for the broadest audience possible. 
-                            We implemented a straightforward, easy-to-read design and conducted automated accessibility testing throughout the development process to improve accessibility. 
-                            Key tools we used included: <a class="links-in-text" href="https://www.webaccessibility.com" 
-                            target="_blank">webaccessibility.com</a>, and, <a class="links-in-text" href="https://wave.webaim.org" 
-                            target="_blank">wave.webaim.org</a>. The latter was especially valuable, offering insightful guidelines on both our successful and less effective practices. 
-                            The information page on universal design, in particular, connected with individuals facing various challenges, helping us better understand the adjustments needed.
-                        </p>
-                    </div>
-                    <!-- Flex-box med bilde og tekst -->
-                    <div class ="accessibility-box-2">    
-                        <h2>Color Theme Selection</h2>
-                        <img class="pictures-accessibility" src="../bilder/high-contrast-color.png" 
-                            alt="Image of two squares showing the contrast between grey, black, white and yellow" 
-                            title="Photo: Triangle Park Creative">
-                        <figcaption class="figcaption-accessibility">Photo: <a class="links-in-text" 
-                            href="https://www.triangleparkcreative.com" target="_blank">Triangle Park Creative</a></figcaption>
-                        <p class="text">Significant thought went into choosing the color scheme. 
-                            To support those with low vision, we prioritized high contrast by selecting colors from opposite ends of the spectrum. 
-                            We rigorously tested for different types of color blindness to ensure easy distinction. 
-                            The final palette also took readability in dark settings and reduced eye strain into account. 
-                            In the end, a vibrant orange was selected for its suitability for users with vision impairments, including color blindness. 
-                            Large navigation buttons were incorporated to enhance usability, particularly for older adults and individuals with slower cognitive processing.
-                        </p>
-                    </div>      
-                    <!-- Flex-box med bilde og tekst -->      
-                    <div class="accessibility-box-3">
-                        <h2>Accessibility for the Blind</h2>
-                        <img class="pictures-accessibility" src="../bilder/bruk-av-html.png" 
-                        alt="Screenshot of a code-snippet showing how we use elements like article i our HTML" 
-                        title="Photo: Private screenshot, 20.11.23">
-                        <figcaption class="figcaption-accessibility">
-                            Making the website accessible for individuals with visual impairments was a primary focus. 
-                            We conducted extensive testing with screen readers and provided descriptive text for all images and icons, 
-                            (Include alternative text &lt;alt&gt; for images.) Use proper HTML structure 
-                            (e.g., &lt;nav&gt;, &lt;article&gt;, &lt;header&gt;, &lt;footer&gt;). Use appropriate HTML 
-                            elements for different content types, enhancing readability for the blind and those relying on voice-to-text features. 
-                        </p>
-                    </div>
-                    <!-- Flex-box med bilde og tekst -->
-                    <div class="accessibility-box-4">
-                        <h2>K.I.S.S</h2>
-                        <img class="pictures-accessibility" src="../bilder/kiss-cover.jpg" 
-                        alt="Image with the acronym K.I.S.S, Keep It Simple Stupid" title="Photo: Taylor Hieber">
-                        <figcaption class="figcaption-accessibility">Photo: <a class="links-in-text" 
-                            href="https://taylorhieber.co/kiss-keep-it-simple-stupid/" target="_blank">Taylor Hieber</a></figcaption>
-                        <p class="text"> Our design philosophy emphasizes simplicity and clarity, aiming to reduce the chance of errors and create a highly reliable website. 
-                            The look is fresh and minimal, free from distracting graphics, animations, gradients, shadows, textures, or frames. 
-                            The color palette was chosen for optimal readability, reducing eye strain and accommodating color blindness. 
-                            Although the design may appear understated, its primary purpose is to ensure universal accessibility, making it easy for everyone to read or listen to content.
-                        </p>
-                    </div>
-                </div>
-            </article>    
-        </main>        
 
 <!-- Footer -->
 <footer class="footer">
     <div class="footer-grid">
         <div>
             <h3>Oslo Metropolitan University</h3>
+            <br>
             <ul>
                 <li>PO Box 4, St. Olavs plass</li>
                 <li>0130 Oslo</li>
@@ -149,11 +81,10 @@
                 <li><a href="https://www.facebook.com/oslomet/"><i class="fa-brands fa-square-facebook"></i>&nbsp;&nbsp;Facebook</a></li>
                 <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Foslomet"><i class="fa-brands fa-square-x-twitter"></i>&nbsp;&nbsp;X (Twitter)</a></li>
                 <li><a href="https://www.linkedin.com/school/oslomet/posts/?feedView=all"><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/oslomet/?hl=nb"><i class="fa-brands fa-square-instagram"></i>&nbsp;&nbsp;Instagram</a></li>
+                <li><a href="https://www.instagram.com/oslomet/?hl=nb"><i class="fa-brands fa-square-instagram"></i>&nbsp;&nbsp;Instagram</a></li>            
             </ul>
         </div>
     </div>
 </footer>
 </body>
 </html>
-
