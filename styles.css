@@ -276,6 +276,34 @@ table th span , table td span{
     width: 45%; /* 每个 section 占据父容器宽度的45% */
 }
 
+/* Accessibility page*/
+.accessiblity{
+    max-width: 50%;
+    margin: 40px auto;
+}
+.accessibility-image {
+    width: 100%; 
+    height: auto;
+}
+.accesibility-content{
+    background-color: #E1EFF4;
+    padding: 40px;
+    margin-top: -5px;
+}
+.github-content h2{
+    margin-top: 30px;
+}
+
+.accessibility-sections {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.accesibility {
+    width: 45%; 
+}
+
 
 /* Footer */
 .footer{
