@@ -249,6 +249,11 @@ table th span , table td span{
 }
 
 /*Github and accesibility page */
+.main-section-github {
+    padding: 60px 20px;
+    background-color: #fefefe; /* Blå bakgrunn for hovedseksjonen */
+    text-align: center;
+}
 
 .github,
 .accessibility {
@@ -265,32 +270,37 @@ table th span , table td span{
 }
 
 .accessibility-div,.github-div{
-    display: flex; /* Flex layout for image and content */
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Stack image and content vertically */
+    align-items: center; /* Center-align content and image */
     gap: 20px; /* Space between image and content */
-    border: 1px solid #ddd; /* Light border for separation */
-    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border for the container */
+    border-radius: 8px; /* Rounded corners for the container */
     padding: 20px;
     background-color: #f9f9f9; /* Subtle background color */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%; /* Full width for the container */
+    max-width: 900px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
   }
 
 .github-image,
 .accessibility-image {
-    width: 300px; /* Set a consistent width */
-  height: auto; /* Maintain aspect ratio */
-  flex-shrink: 0; /* Prevent the image from shrinking */
-  border-radius: 8px; /* Match div's rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for images */
+    max-width: 100%; /* Scale image to fit container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for images */
 }
 
 .github-content,
 .accessibility-content {
-    flex: 1; /* Content takes the remaining space */
+    text-align: left; /* Center-align text for better readability */
+    width: 100%; /* Match the width of the container */
 }
 
 .github-content h1,
 .accessibility-content h1 {
-    margin-top: 0; /* Remove default margin */
+  margin-top: 0; /* Remove default margin */
   color: #333; /* Darker text color for headings */
   font-size: 20px; /* Adjust font size */
 }
@@ -300,16 +310,16 @@ table th span , table td span{
     margin: 10px 0 0; /* Add space above text, none below */
     color: #555; /* Softer text color for readability */
     line-height: 1.8; /* Increase line spacing for clarity */
+    text-align: left;
 }
 
 .github-sections,
 .accessibility-sections {
     max-width: 1000px; /* Restrict width for readability */
-    margin: 20px auto; /* Center align the container */
+    margin: auto; /* Center align the container */
     padding: 10px;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
-
 
 
 /* Footer */
