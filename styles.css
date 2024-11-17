@@ -248,12 +248,13 @@ table th span , table td span{
     text-decoration: none;
 }
 
+/*Github and accesibility page */
+
 .github,
 .accessibility {
     margin-bottom: 30px; /* Add spacing between sections */
 }
 
-/* Card container */
 .github-content,
 .accessibility-content {
     background-color: #E1EFF4;
@@ -263,9 +264,8 @@ table th span , table td span{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.accessibility-div,.github-div {
+.accessibility-div,.github-div{
     display: flex; /* Flex layout for image and content */
-    align-items: flex-start; /* Align items at the start */
     gap: 20px; /* Space between image and content */
     border: 1px solid #ddd; /* Light border for separation */
     border-radius: 8px; /* Rounded corners */
@@ -274,9 +274,6 @@ table th span , table td span{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   }
 
-
-
-/* Image styling */
 .github-image,
 .accessibility-image {
     width: 300px; /* Set a consistent width */
@@ -298,8 +295,8 @@ table th span , table td span{
   font-size: 20px; /* Adjust font size */
 }
 
-.github-content p,
-.accessibility-content  {
+.github-content p,ul,li,
+.accessibility-content p {
     margin: 10px 0 0; /* Add space above text, none below */
     color: #555; /* Softer text color for readability */
     line-height: 1.8; /* Increase line spacing for clarity */
@@ -336,9 +333,7 @@ table th span , table td span{
     text-decoration: none;
 }
 
-/* Index page - end */
-
-/* Responsiveness (Index page) */
+/* Responsiveness */
 @media screen and (max-width: 767px) {
     html{
         max-width: 100%;
