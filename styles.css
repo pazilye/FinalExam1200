@@ -189,6 +189,7 @@ table th span , table td span{
 .interest-grid div h4{
     padding: 20px;
     font-size: 22px;
+    color: black;
 }
 .interest-grid div ul{
     list-style: none;
@@ -206,7 +207,7 @@ table th span , table td span{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     max-width: 40%;
-    margin: 60px auto 0 auto;
+    margin: 20px auto 0 auto;
     gap: 20px;
 }
 .contact-image{
@@ -220,10 +221,10 @@ table th span , table td span{
 .contact p{
     max-width: 40%;
     margin: 10px auto;
-    font-size: 18px;
+    font-size: 20px;
 }
 .contact-grid h3{
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 50px;
     text-align: center;
 }
@@ -233,7 +234,7 @@ table th span , table td span{
     text-align: center;
 }
 .contact-grid h5{
-    font-size: 16px;
+    font-size: 18px;
     padding-top: 10px;
     text-align: center;
 }
@@ -276,7 +277,7 @@ table th span , table td span{
 
 .github-image,
 .accessibility-image {
-    width: 300px; /* Set a consistent width */
+width: 300px; /* Set a consistent width */
   height: auto; /* Maintain aspect ratio */
   flex-shrink: 0; /* Prevent the image from shrinking */
   border-radius: 8px; /* Match div's rounded corners */
@@ -329,7 +330,7 @@ table th span , table td span{
     line-height: 35px;
 }
 .footer-grid ul li a{
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -489,9 +490,10 @@ table th span , table td span{
         .github-image,
         .accessibility-image {
             height: auto;
+            width: auto;
         }
 
-        .github-content p,
+        .github-content p,ul,
         .accessibility-content p {
             font-size: 0.95rem; /* Slightly smaller text for readability */
         }
@@ -500,27 +502,3 @@ table th span , table td span{
 
     
 }
-
-/* Index page - end */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
