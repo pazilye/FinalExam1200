@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #b95000; /* Lys bakgrunn for toppmenyen */
+    background-color: #ABABAB; /* Lys bakgrunn for toppmenyen */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lett skygge for dybdeeffekt */
 }
 
