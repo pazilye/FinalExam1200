@@ -340,9 +340,10 @@ table th span , table td span{
     line-height: 35px;
 }
 .footer-grid ul li a{
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
 }
+
 
 /* Responsiveness */
 @media screen and (max-width: 767px) {
