@@ -327,7 +327,7 @@ table th span , table td span{
 .footer{
     background-color: #00192C;
     padding: 60px 40px;
-    color: white;
+    color: #ffff;
 }
 .footer-grid{
     display: grid;
