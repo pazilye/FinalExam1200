@@ -264,7 +264,7 @@ table th span , table td span{
 }
 
 .accessibility-div,.github-div{
-    display: flex; /* Flex layout */
+    display: flex; 
     flex-direction: column; /* Stack image and content vertically */
     align-items: center; /* Center-align content and image */
     gap: 20px; /* Space between image and content */
