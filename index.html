@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="no" class="html-locale-no">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Oslomet - Index</title>
 
     <!-- CSS link -->
@@ -13,30 +11,33 @@
     <!-- Fontawesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!--  Icon link til valge fag-->
+    <!-- Icon link -->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
-<body>
-   <!-- header -->
-<!-- https://codepen.io/jo_Geek/pen/xgbaEr (Referanse) -->
-<header class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-header">
-        <a href="index.html"><img src="images/logo.svg" class="logo" alt="logo av oslomet"></a>
-    </div>
-    <div class="nav-btn">
-        <label for="nav-check" aria-label="Toggle navigation menu">
-            <!-- Add an icon or visual indicator -->
-            <span class="menu-icon">&#9776;</span> <!-- Unicode for hamburger menu -->
-        </label>
-    </div>
 
-    <div class="nav-links">
-        <a href="activity.html">Aktivitet</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="github.html">GitHub</a>
-    </div>
-    </header>
+<body>
+   <!-- Header -->
+   <header class="nav">
+       <input type="checkbox" id="nav-check">
+       <nav role="navigation" aria-label="Hovedmeny">
+           <div class="nav-header">
+               <!-- SVG-logo med bedre beskrivelse -->
+               <a href="index.html">
+                   <img src="images/logo.svg" class="logo" alt="OsloMet-logo: Universitetsmerke med gule linjer">
+               </a>
+           </div>
+           <div class="nav-btn">
+               <label for="nav-check" aria-label="Åpne eller lukk navigasjonsmenyen">
+                   <span class="menu-icon">&#9776;</span>
+               </label>
+           </div>
+           <div class="nav-links">
+               <a href="activity.html">Aktivitet</a>
+               <a href="accessibility.html">Accessibility</a>
+               <a href="github.html">GitHub</a>
+           </div>
+       </nav>
+   </header>
 
  <!-- Hero Section -->
 <main class="hero-section">

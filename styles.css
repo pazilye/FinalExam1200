@@ -264,7 +264,7 @@ table th span , table td span{
 }
 
 .accessibility-div,.github-div{
-    display: flex; /* Flex layout */
+    display: flex; 
     flex-direction: column; /* Stack image and content vertically */
     align-items: center; /* Center-align content and image */
     gap: 20px; /* Space between image and content */
@@ -274,7 +274,7 @@ table th span , table td span{
     background-color: #f9f9f9; /* Subtle background color */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     width: 100%; /* Full width for the container */
-    max-width: 900px; /* Limit the width of the container */
+    max-width: 80%; /* Limit the width of the container */
     margin: 0 auto; /* Center the container horizontally */
   }
 
@@ -345,15 +345,14 @@ table th span , table td span{
 
 
 /* Responsiveness */
+/* Responsiv design */
+
+/* For små skjermer (mobil) */
 @media screen and (max-width: 767px) {
-    html{
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-    .logo{
+    .logo {
         width: 50px;
     }
-    .nav{
+    .nav {
         padding: 20px;
     }
     .nav-btn {
@@ -362,153 +361,53 @@ table th span , table td span{
         right: 0;
         top: 10px;
     }
-    .nav-btn label {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        padding: 13px;
-    }
-
-
-    .nav-btn label span {
-        display: block;
-        width: 25px;
-        height: 10px;
-        border-top: 2px solid #00192C;
-    }
     .nav-links {
         position: absolute;
         display: block;
         width: 100%;
         background-color: #00192C;
         height: 0;
-        transition: all 0.3s ease-in;
         overflow-y: hidden;
         top: 70px;
         left: 0;
+        transition: height 0.3s ease-in;
     }
     .nav-links a {
         display: block;
         width: 100%;
         color: white;
     }
-    #nav-check:not(:checked) ~ .nav-links {
-        height: 0;
-    }
     #nav-check:checked ~ .nav-links {
         height: auto;
-        overflow-y: auto;
     }
-    .or-1{
-        order: 2;
-    }
-    .or-2{
-        order: 1;
-    }
-    .heading{
-        font-size: 28px;
-        line-height: initial;
-    }
-    .heading-2 , .story-content h2, .structure-div h2, .sec-3-div h2, .contact h2{
-        font-size: 25px;
-    }
-    .story-content{
+    .hero-section {
         padding: 20px;
     }
-    .hero-image{
-        padding-bottom: 30px;
+    .grid-row,
+    .interest-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
-    .hero-section{
-        padding: 20px;
-    }
-    .grid-row , .interest-grid , .contact-grid, .footer-grid{
-        grid-template-columns: 100%;
-    }
-    .contact-grid{
-        min-width: 100%;
-        margin-top: 30px;
-        align-items: center;
-        align-content: center;
+    .contact-grid {
         text-align: center;
     }
-    .contact-grid h3{
-        padding-top: 0;
-    }
-    .section-2 , .interested , .footer{
-        padding: 30px 20px;
-    }
-    .sec-2-flex{
-        min-width: 100%;
-        justify-content: flex-start;
-    }
-    .story{
+    .story {
         max-width: 90%;
-        margin: 30px auto;
     }
-    .contact p{
-        min-width: 100%;
-    }
-    .contact-image{
-        width: 50%;
-    }
-    .program-structure , .contact{
-        padding: 40px 20px;
-    }
-    .structure-div p{
-        min-width: 100%;
-    }
-    .program-structure table td , .program-structure table span{
-        font-size: 13px;
-    }
-    .section-3{
-        padding: 20px;
+    .contact p {
+        text-align: center;
     }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
-    html{
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-    .heading{
+
+/* For mellomstore skjermer (nettbrett) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .heading {
         font-size: 30px;
-        line-height: initial;
     }
-    .hero-image{
-        height: 100%;
-        object-fit: cover;
-    }
-    .sub-head{
-        padding-top: 10px;
-    }
-    .story , .structure-div p{
+    .story {
         max-width: 75%;
     }
-    .interest-grid{
-        grid-template-columns: repeat(2,2fr);
+    .interest-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .contact-grid{
-        min-width: 100%;
-    }
-
-    @media (max-width: 768px) {
-        .github-sections,
-        .accessibility-sections {
-            grid-template-columns: 1fr; /* Stack on mobile */
-            gap: 1rem;
-        }
-        
-        .github-image,
-        .accessibility-image {
-            height: auto;
-            width: auto;
-        }
-
-        .github-content p,ul,
-        .accessibility-content p {
-            font-size: 0.95rem; /* Slightly smaller text for readability */
-        }
-    }
-
-
-    
 }
