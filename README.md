@@ -7,7 +7,7 @@ CSS3: Styling, responsiv design og layout.
 Tilgjengelighetstesting: Bruk av verktøy som Lighthouse og WAVE for å forbedre tilgjengeligheten.
 
 ### 📂 Mappestruktur
-/```project-folder
+project-folder
 * index.html          
 * Activity.html
 * Accessbility.html
@@ -16,7 +16,7 @@ Tilgjengelighetstesting: Bruk av verktøy som Lighthouse og WAVE for å forbedre
 * activity.css   
 * images/        
 * README.md       
-/```
+
 
 #### 🎨 Funksjoner
 Header & Navigasjon: Enkel, responsiv navigasjonsmeny.
