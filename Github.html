@@ -13,25 +13,39 @@
 </head>
 <body>
 <!-- header -->
+<header>
 <!-- https://codepen.io/jo_Geek/pen/xgbaEr (Reference) -->
-<header class="nav">
-    <input type="checkbox" id="nav-check">
+<nav role="navigation" aria-label="Hovedmeny">
+    <!-- Hamburger Checkbox -->
+    <input type="checkbox" id="nav-check" />
+
+    <!-- Logo/Brand -->
     <div class="nav-header">
-        <a href="index.html"><img src="images/logo.svg" class="logo" alt="logo av Oslomet"></a>
-    </div>
-    <div class="nav-btn">
-        <label for="nav-check" aria-label="Toggle navigation menu">
-            <!-- Add an icon or visual indicator -->
-            <span class="menu-icon">&#9776;</span> <!-- Unicode for hamburger menu -->
-        </label>
+      <a href="index.html">
+        <img 
+          src="images/logo.svg" 
+          class="logo" 
+          alt="OsloMet-logo: Universitetsmerke med gule linjer" 
+        />
+      </a>
     </div>
 
-    <div class="nav-links">
-        <a href="activity.html">Aktivitet</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="github.html">GitHub</a>
+    <!-- Hamburger Icon -->
+    <div class="nav-btn">
+      <label for="nav-check" aria-label="Åpne eller lukk navigasjonsmenyen">
+        <span class="menu-icon">&#9776;</span>
+      </label>
     </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="activity.html">Aktivitet</a>
+      <a href="accessibility.html">Accessibility</a>
+      <a href="github.html">GitHub</a>
+    </div>
+  </nav>
 </header>
+
 
 <!-- Hovedinnhold (Main content) -->
 
@@ -51,6 +65,7 @@
         <article>
         <div class="github-div">
             <img src="images/GithubcommitPaziliye.png" class="github-image" alt="bildet av commit-historikk i github">
+            <!-- image source: private screenshot-->
             <div class="shared-content">
                 <h2>Fordeler med GitHub</h2>
                 <p>Liste opp noen av fordelene vi opplevde med GitHub:</p>
@@ -68,6 +83,7 @@
         <article>
         <div class="github-div">
             <img src="images/GithubchangePaziliye.png" class="github-image" alt="bildet av spesifikk endringer i github">
+            <!-- image source: private screenshot-->
             <div class="shared-content">
                 <h2>Hvordan brukte vi Git med GitHub</h2>
                 <p>For å jobbe med Git og GitHub fulgte vi disse enkle trinnene:</p>
@@ -96,6 +112,7 @@
         <article>
         <div class="github-div">
             <img src="images/GithubcommitRamile.png" class="github-image" alt="bildet av merge historikk">
+            <!-- Image source: private screenshot-->
             <div class="shared-content">
                 <h2>Konflikter og Løsninger</h2>
                 <p>I prosjektet møtte vi to hovedutfordringer som skapte konflikter:</p>
@@ -120,6 +137,7 @@
         <article>
         <div class="github-div">
             <img src="images/GithubchangeRamile.png" class="github-image" alt="bildet av commit-historikk to">
+            <!-- image source: private screenshot-->
             <div class="shared-content">
                 <h2>Eksempler på Commit-Historikk</h2>
                 <p>Commit-historikken vår viser hvordan vi jobbet systematisk med hyppige og små oppdateringer gjennom prosjektet.

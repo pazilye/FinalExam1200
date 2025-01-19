@@ -13,46 +13,58 @@
 
     <!-- Icon link -->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-</head>
+</header>
+<header>
+<nav role="navigation" aria-label="Hovedmeny">
+    <!-- Hamburger Checkbox -->
+    <input type="checkbox" id="nav-check" />
 
-<body>
-   <!-- Header -->
-   <header class="nav">
-       <input type="checkbox" id="nav-check">
-       <nav role="navigation" aria-label="Hovedmeny">
-           <div class="nav-header">
-               <!-- SVG-logo med bedre beskrivelse -->
-               <a href="index.html">
-                   <img src="images/logo.svg" class="logo" alt="OsloMet-logo: Universitetsmerke med gule linjer">
-               </a>
-           </div>
-           <div class="nav-btn">
-               <label for="nav-check" aria-label="Åpne eller lukk navigasjonsmenyen">
-                   <span class="menu-icon">&#9776;</span>
-               </label>
-           </div>
-           <div class="nav-links">
-               <a href="activity.html">Aktivitet</a>
-               <a href="accessibility.html">Accessibility</a>
-               <a href="github.html">GitHub</a>
-           </div>
-       </nav>
-   </header>
-
- <!-- Hero Section -->
-<main class="hero-section">
-    <div class="grid-row">
-        <div class="or-1">
-            <img src="images/thumbnail.jpeg" class="hero-image" alt="bildet av 3 studenter sitter og diskuterer">
-        </div>
-        <div class="or-2">
-             <h1 class="heading">Matematisk modellering og datavitenskap ingeniør
-            </h1>
-            <h2 class="sub-head">Bachelorprogram</h2>
-            <p class="text-1">Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.
-            </p>
-        </div>
+    <!-- Logo/Brand -->
+    <div class="nav-header">
+      <a href="index.html">
+        <img 
+          src="images/logo.svg" 
+          class="logo" 
+          alt="OsloMet-logo: Universitetsmerke med gule linjer" 
+        />
+      </a>
     </div>
+
+    <!-- Hamburger Icon -->
+    <div class="nav-btn">
+      <label for="nav-check" aria-label="Åpne eller lukk navigasjonsmenyen">
+        <span class="menu-icon">&#9776;</span>
+      </label>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="activity.html">Aktivitet</a>
+      <a href="accessibility.html">Accessibility</a>
+      <a href="github.html">GitHub</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<main class="hero-section">
+  <div class="grid-row">
+    <div class="or-1">
+      <img 
+        src="images/thumbnail.jpeg" 
+        class="hero-image" 
+        alt="Bildet av 3 studenter som sitter og diskuterer"
+      />
+    </div>
+    <div class="or-2">
+      <h1 class="heading">Matematisk modellering og datavitenskap ingeniør</h1>
+      <h2 class="sub-head">Bachelorprogram</h2>
+      <p class="text-1">
+        Få innsikt i matematiske modeller og datadrevne metoder som kan løse 
+        mange praktiske og samfunnsnyttige oppgaver.
+      </p>
+    </div>
+  </div>
 </main>
 
 <!-- Section 2 - about -->
@@ -190,6 +202,7 @@
     <h2 class="heading-2">Studenthistorier</h2>
     <div class="story-div">
         <img src="images/story.jpg" class="story-image" alt="bildet av studenter , en med pc i hånda og andre smiler">
+        <!-- image source:https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxlarge/1/6/4/1/401461-1-nor-NO/613c6efdb147-matematikk_oslomet_smilefjes.jpg -->
         <div class="story-content">
              <h2>Spå fremtiden med matematikk og datavitenskap</h2>
                <p>Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å fortusi alt fra været og strømprisene til utviklingen i boligmarkedet.
@@ -206,6 +219,7 @@
     <div class="interest-grid">
         <div>
             <img src="images/c.webp" class="i-image" alt="fremtidens data verden">
+            <!-- image source: https://www.kristiania.no/contentassets/fab5804168fc4fa5bbda60419bcf9f4a/art-science-maxim-hopman-iayklkmz6g0-unsplash.jpg?width=2272&rxy=0.33,0.56-->
             <h3>Anvendt datateknologi</h3>
             <ul>
                 <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Bachelorprogram</li>
@@ -216,6 +230,7 @@
         </div>
         <div>
             <img src="images/bc.webp" class="i-image" alt="en mann som ser på mobilen">
+            <!-- image source: https://miro.medium.com/v2/resize:fit:1400/format:webp/0*UxAgJ6gUxnV5MVio -->
             <h3>Bioteknologi-og kjemiingeniør</h3>
             <ul>
                 <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Bachelorprogram</li>
@@ -226,6 +241,7 @@
         </div>
         <div>
             <img src="images/ce.webp" class="i-image" alt="en mann som går i et byggeplass">
+            <!-- image source:https://braathe.no/wp-content/uploads/2023/02/guilherme-cunha-4zwozQxDbD4-unsplash-2794x1748-c-default.webp -->
             <h3>Byggingeniør</h3>
             <ul>
                 <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Bachelorprogram</li>
@@ -236,6 +252,7 @@
         </div>
         <div>
             <img src="images/ee.webp" class="i-image" alt="en Elektronikkingeniør som jobber">
+            <!-- image source: https://epic-photonics.com/wp-content/uploads/2021/06/engineer-4922413_1920-800x450.jpg-->
             <h3>Elektronikkingeniør</h3>
             <ul>
                 <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Bachelorprogram</li>
@@ -257,6 +274,7 @@
         <div class="contact-grid">
             <div>
                 <img src="images/supervisor.jpeg" class="contact-image" alt="bildet av faglig leder i oslomet">
+                <!-- image source: https://gw-oslomet.intark.uh-it.no/ansattbilde/krhel3944 -->
             </div>
             <div>
                 <h3>Faglig leder</h3>
