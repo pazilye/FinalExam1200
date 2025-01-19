@@ -347,11 +347,13 @@
     text-align: left;
   }
   
-  .shared-sections{
-    max-width: 1000px; 
-    margin: auto; 
-    padding: 10px;
-    box-sizing: content-box;
+  .shared-sections {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px; 
   }
   
   /* ACTIVITY PAGE (Removed the background color here so we can use .activity-body) */
