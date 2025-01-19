@@ -358,27 +358,27 @@ table th span , table td span{
     .nav-btn {
         display: inline-block;
         position: absolute;
-        right: 0;
+        right: 40;
         top: 10px;
     }
     .nav-links {
+        display: none; /* Hide navigation links by default */
+        width: 100%; /* Full width dropdown */
+        text-align: left;
         position: absolute;
-        display: block;
-        width: 100%;
-        background-color: #00192C;
-        height: 0;
-        overflow-y: hidden;
-        top: 70px;
+        top: 60px;
         left: 0;
-        transition: height 0.3s ease-in;
+        background-color: white;
+        z-index: 1000;
     }
+    
     .nav-links a {
-        display: block;
-        width: 100%;
-        color: white;
+        display: block; 
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
     }
     #nav-check:checked ~ .nav-links {
-        height: auto;
+        display: block; 
     }
     .hero-section {
         padding: 20px;
