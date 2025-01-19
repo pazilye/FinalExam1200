@@ -13,26 +13,38 @@
 </head>
 <body>
 <!-- header -->
+<header>
 <!-- https://codepen.io/jo_Geek/pen/xgbaEr (Reference) -->
-<header class="nav">
-    <input type="checkbox" id="nav-check">
+<nav role="navigation" aria-label="Hovedmeny">
+    <!-- Hamburger Checkbox -->
+    <input type="checkbox" id="nav-check" />
+
+    <!-- Logo/Brand -->
     <div class="nav-header">
-        <a href="index.html"><img src="images/logo.svg" class="logo" alt="logo of Oslomet"></a>
-        <!-- image source: OsloMet logo -->
-    </div>
-    <div class="nav-btn">
-        <label for="nav-check" aria-label="Toggle navigation menu">
-            <!-- Add an icon or visual indicator -->
-            <span class="menu-icon">&#9776;</span> <!-- Unicode for hamburger menu -->
-        </label>
+      <a href="index.html">
+        <img 
+          src="images/logo.svg" 
+          class="logo" 
+          alt="OsloMet-logo: Universitetsmerke med gule linjer" 
+        />
+      </a>
     </div>
 
-    <div class="nav-links">
-        <a href="activity.html">Aktivitet</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="github.html">GitHub</a>
+    <!-- Hamburger Icon -->
+    <div class="nav-btn">
+      <label for="nav-check" aria-label="Åpne eller lukk navigasjonsmenyen">
+        <span class="menu-icon">&#9776;</span>
+      </label>
     </div>
-</header>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="activity.html">Aktivitet</a>
+      <a href="accessibility.html">Accessibility</a>
+      <a href="github.html">GitHub</a>
+    </div>
+  </nav>
+
 
 <!-- Hovedinnhold (Main content) -->
 

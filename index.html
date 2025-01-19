@@ -13,48 +13,58 @@
 
     <!-- Icon link -->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-</head>
+</header>
+<header>
+<nav role="navigation" aria-label="Hovedmeny">
+    <!-- Hamburger Checkbox -->
+    <input type="checkbox" id="nav-check" />
 
-<body>
-   <!-- Header -->
-   <header class="nav">
-       <input type="checkbox" id="nav-check">
-       <nav role="navigation" aria-label="Hovedmeny">
-           <div class="nav-header">
-               <!-- SVG-logo med bedre beskrivelse -->
-               <a href="index.html">
-                   <img src="images/logo.svg" class="logo" alt="OsloMet-logo: Universitetsmerke med gule linjer">
-                   <!--  image source: osloMet logo-->
-               </a>
-           </div>
-           <div class="nav-btn">
-               <label for="nav-check" aria-label="Åpne eller lukk navigasjonsmenyen">
-                   <span class="menu-icon">&#9776;</span>
-               </label>
-           </div>
-           <div class="nav-links">
-               <a href="activity.html">Aktivitet</a>
-               <a href="accessibility.html">Accessibility</a>
-               <a href="github.html">GitHub</a>
-           </div>
-       </nav>
-   </header>
-
- <!-- Hero Section -->
-<main class="hero-section">
-    <div class="grid-row">
-        <div class="or-1">
-            <img src="images/thumbnail.jpeg" class="hero-image" alt="bildet av 3 studenter sitter og diskuterer">
-            <!-- image source: https://film.oslomet.no/matematisk-modellering-og    <Screenshot from the video> -->
-        </div>
-        <div class="or-2">
-             <h1 class="heading">Matematisk modellering og datavitenskap ingeniør
-            </h1>
-            <h2 class="sub-head">Bachelorprogram</h2>
-            <p class="text-1">Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.
-            </p>
-        </div>
+    <!-- Logo/Brand -->
+    <div class="nav-header">
+      <a href="index.html">
+        <img 
+          src="images/logo.svg" 
+          class="logo" 
+          alt="OsloMet-logo: Universitetsmerke med gule linjer" 
+        />
+      </a>
     </div>
+
+    <!-- Hamburger Icon -->
+    <div class="nav-btn">
+      <label for="nav-check" aria-label="Åpne eller lukk navigasjonsmenyen">
+        <span class="menu-icon">&#9776;</span>
+      </label>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="activity.html">Aktivitet</a>
+      <a href="accessibility.html">Accessibility</a>
+      <a href="github.html">GitHub</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<main class="hero-section">
+  <div class="grid-row">
+    <div class="or-1">
+      <img 
+        src="images/thumbnail.jpeg" 
+        class="hero-image" 
+        alt="Bildet av 3 studenter som sitter og diskuterer"
+      />
+    </div>
+    <div class="or-2">
+      <h1 class="heading">Matematisk modellering og datavitenskap ingeniør</h1>
+      <h2 class="sub-head">Bachelorprogram</h2>
+      <p class="text-1">
+        Få innsikt i matematiske modeller og datadrevne metoder som kan løse 
+        mange praktiske og samfunnsnyttige oppgaver.
+      </p>
+    </div>
+  </div>
 </main>
 
 <!-- Section 2 - about -->
