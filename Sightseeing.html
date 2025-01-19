@@ -1,25 +1,52 @@
 <!--Sight-seeing page -->
 <!DOCTYPE html>
 <html lang="no">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oslomet - Sight-seeing</title>
-  <link href="styles.css" type="text/css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oslomet - Index</title>
 
-<header class="nav">
-  <div class="nav-header">
-  <!-- Logo og lenke til forsiden -->
-    <a href="index.html"><img src="images/logo.svg" class="logo" alt="logo of oslomet"></a>  
-    <!-- image source: osloMet logo --> 
-  </div>
-  <!-- Navigasjonslenker -->
-  <nav class="nav-links">
-    <a href="Sightseeing.html">Sight-seeing</a>
-    <a href="Accessibility.html">Accessibility</a>
-    <a href="Github.html">GitHub</a>
+    <!-- CSS link -->
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Icon link -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</header>
+<header>
+<nav role="navigation" aria-label="Hovedmeny">
+    <!-- Hamburger Checkbox -->
+    <input type="checkbox" id="nav-check" />
+
+    <!-- Logo/Brand -->
+    <div class="nav-header">
+      <a href="index.html">
+        <img 
+          src="images/logo.svg" 
+          class="logo" 
+          alt="OsloMet-logo: Universitetsmerke med gule linjer" 
+        />
+      </a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="nav-btn">
+      <label for="nav-check" aria-label="Åpne eller lukk navigasjonsmenyen">
+        <span class="menu-icon">&#9776;</span>
+      </label>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="Sightseeing.html">Sight-seeing</a>
+      <a href="Accessibility.html">Accessibility</a>
+      <a href="Github.html">GitHub</a>
+    </div>
   </nav>
 </header>
 
