@@ -1,117 +1,107 @@
 <!DOCTYPE html>
 <html lang="no">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oslomet - Accessibility</title>
-
-    <!-- CSS File LINKING -->
-    <link href="styles.css" type="text/css" rel="stylesheet">
-
-    <!-- Fontawesome icon link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
-<body>
-<!-- header -->
-<header>
-<!-- https://codepen.io/jo_Geek/pen/xgbaEr (Reference) -->
-<nav role="navigation" aria-label="Hovedmeny">
-    <!-- Hamburger Checkbox -->
-    <input type="checkbox" id="nav-check"/>
-
-    <!-- Logo/Brand -->
-    <div class="nav-header">
-      <a href="index.html">
-        <img 
-          src="images/logo.svg" 
-          class="logo" 
-          alt="OsloMet-logo: Universitetsmerke med gule linjer" 
-        />
-      </a>
-    </div>
-
-    <!-- Hamburger Icon -->
-    <div class="nav-btn">
-      <label for="nav-check" aria-label="Åpne eller lukk navigasjonsmenyen">
-        <span class="menu-icon">&#9776;</span>
-      </label>
-    </div>
-
-    <!-- Navigation Links -->
-    <div class="nav-links">
-        <a href="Sightseeing.html">Sight-seeing</a>
-        <a href="Accessibility.html">Accessibility</a>
-        <a href="Github.html">GitHub</a>
-    </div>
-  </nav>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oslomet - Accessibility</title>
+        <meta name="description" content="OsloMet Accessibility page highlighting usability and inclusive design practices.">
+    
+        <link href="styles.css" type="text/css" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+    <!-- header -->
+    <header>
+    <!-- https://codepen.io/jo_Geek/pen/xgbaEr -->
+    
+        <nav role="navigation" aria-label="Hovedmeny">
+          <!-- Hamburger Checkbox -->
+          <input type="checkbox" id="nav-check" />
+    
+          <!-- Logo/Brand -->
+          <div class="nav-header">
+            <a href="index.html">
+              <img
+                src="images/logo.svg"
+                class="logo"
+                alt="OsloMet-logo"
+              />
+            </a>
+          </div>
+    
+          <!-- Hamburger Icon -->
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span class="menu-icon">&#9776;</span>
+            </label>
+          </div>
+    
+          <!-- Navigation Links -->
+          <div class="nav-links">
+            <a href="Sightseeing.html">Sight-seeing</a>
+            <a href="Accessibility.html">Accessibility</a>
+            <a href="Github.html">GitHub</a>
+          </div>
+        </nav>
+      </header>
+    
 
 <!-- Hovedinnhold  -->
-
-<section class="main-section">
+<main class="main-section">
     <div class="shared-div">
       <h1>Accessibility</h1>
-      <p>Vi har prioritert brukervennlighet og tilgjengelighet i vårt design,
-         med fokus på å inkludere et bredt spekter av brukere. 
-        Vi har jobbet med høy kontrast, universell utforming og støtte for skjermlesere for å sikre en inkluderende og funksjonell opplevelse for alle..</p>
+      <p>
+        Vi har prioritert brukervennlighet og tilgjengelighet i vårt design, med fokus på å inkludere et bredt spekter av brukere. <br>
+        Vi har jobbet med høy kontrast, universell utforming og støtte for skjermlesere for å sikre en inkluderende og funksjonell opplevelse for alle.
+      </p>
     </div>
-</section>
-
-<div class="shared-sections">
-    <section class="accessibility">
-        <article>
-            <div class="shared-div">
-            <img src="images/test1.jpg" class="shared-image" alt="Skjermbilde av GitHub commit-historikk som viser nylige endringer.">
-            <!-- Image source: Private picture (screenshot)-->
-           <div class="shared-content">
-                <h2>Usability og Accesiblitiy</h2>
-                <p>Hovedmålet vårt for dette nettstedet var å gjøre det brukbart for så bredt publikum som mulig.
-                    Vi implementerte et enkelt og lettlest design og gjennomførte automatiserte tilgjengelighetstester gjennom hele utviklingsprosessen for å forbedre tilgjengeligheten.
-                    Viktige verktøy vi brukte inkluderte: <a class="links-in-text" href="https://developer.chrome.com/docs/lighthouse/overview" 
-                            target="_blank">Lighthouse</a> ,og, <a class="links-in-text" href="https://wave.webaim.org" 
-                            target="_blank">Wave</a>. Sistnevnte var spesielt verdifull, da den ga innsiktsfulle retningslinjer om både våre vellykkede og mindre effektive praksiser.
-                            Informasjonssiden om universell utforming var særlig relevant, da den knyttet seg til personer som står overfor ulike utfordringer, og hjalp oss med å forstå bedre hvilke tilpasninger som var nødvendige.
-                 </p>
-            </div>
-        </div>
+  
+  <section class="shared-sections">
+    <article class="shared-div">
+      <img src="images/test1.jpg" class="shared-image" alt="Skjermbilde av Lighthouse som vi har testet med resultat 99.">
+      <div class="shared-content">
+        <h2>Usability og Accessibility</h2>
+        <p>
+          Hovedmålet vårt for dette nettstedet var å gjøre det brukbart for så bredt publikum som mulig.
+          Vi implementerte et enkelt og lettlest design og gjennomførte automatiserte tilgjengelighetstester gjennom hele utviklingsprosessen for å forbedre tilgjengeligheten.
+          Viktige verktøy vi brukte inkluderte:
+          <a class="links-in-text" href="https://developer.chrome.com/docs/lighthouse/overview" target="_blank">Lighthouse</a> og
+          <a class="links-in-text" href="https://wave.webaim.org" target="_blank">Wave</a>.
+          Sistnevnte var spesielt verdifull, da den ga innsiktsfulle retningslinjer om både våre vellykkede og mindre effektive praksiser.
+          Informasjonssiden om universell utforming var særlig relevant, da den knyttet seg til personer som står overfor ulike utfordringer, og hjalp oss med å forstå bedre hvilke tilpasninger som var nødvendige.
+        </p>
+      </div>
     </article>
-    </section>
-
-    <section class="accessibility">
-        <article>
-        <div class="shared-div">
-            <img src="images/high-contrast-color.jpg" class="shared-image" alt="Bildet som viser forkskjelige farger sine kontraks nivå">
-            <!-- Image source: https://business.scope.org.uk/wp-content/uploads/2023/02/Colour-contrast-accessibility_High-and-low-contrast-with-ratios.jpg -->
-            <div class="shared-content">
-                <h2>Velg av farge</h2>
-                <p>Det ble lagt betydelig tankevirksomhet i valg av fargepalett.
-                    For å støtte personer med nedsatt syn prioriterte vi høy kontrast ved å velge farger fra motsatte ender av spekteret.
-                    Vi testet nøye for ulike typer fargeblindhet for å sikre enkel skilleevne.
-                    Den endelige paletten tok også hensyn til lesbarhet i mørke omgivelser og redusert belastning på øynene.
-                </p>
-            </div>
-        </div>
+  
+    <article class="shared-div">
+      <img src="images/high-contrast-color.jpg" class="shared-image" alt="Bildet som viser ulike fargers kontrastnivåer">
+      <div class="shared-content">
+        <h2>Velg av farge</h2>
+        <p>
+          Det ble lagt betydelig tankevirksomhet i valg av fargepalett.
+          For å støtte personer med nedsatt syn prioriterte vi høy kontrast ved å velge farger fra motsatte ender av spekteret.
+          Vi testet nøye for ulike typer fargeblindhet for å sikre enkel skilleevne.
+          Den endelige paletten tok også hensyn til lesbarhet i mørke omgivelser og redusert belastning på øynene.
+        </p>
+      </div>
     </article>
-    </section>
-
-    <section class="accessibility">
-        <article>
-             <div class="shared-div">
-            <img src="images/screenshot1.jpg" class="shared-image" alt="skjermbilde av nettsiden bruker &lt; alt &lt; and &lt;article&lt; tag">
-           <!-- Image source: Private picture (screenshot)-->
-            <div class="shared-content">
-                <h2>Accessibility for blinde</h2>
-                <p> Å gjøre nettstedet tilgjengelig for personer med synshemminger var et hovedfokus.
-                    Vi gjennomførte omfattende testing med skjermlesere og sørget for beskrivende tekst for alle bilder og ikoner
-                    (Inkludert alternativ tekst &lt;alt&gt; for bilder.). Vi brukte korrekt HTML-struktur
-                    (f.eks. &lt;nav&gt;, &lt;article&gt;, &lt;header&gt;, &lt;footer&gt;).
-                    Ved å bruke passende HTML-elementer for ulike innholdstyper, forbedret vi lesbarheten for blinde og de som er avhengige av stemme-til-tekst-funksjoner.,</p>
-            </div>
-        </div>
+  
+    <article class="shared-div">
+      <img src="images/screenshot1.jpg" class="shared-image" alt="Skjermbilde av koden til nettsiden vår bruker &lt;alt&gt; og &lt;article&gt; tag.">
+      <div class="shared-content">
+        <h2>Accessibility for blinde</h2>
+        <p>
+          Å gjøre nettstedet tilgjengelig for personer med synshemminger var et hovedfokus.
+          Vi gjennomførte omfattende testing med skjermlesere og sørget for beskrivende tekst for alle bilder og ikoner
+          (Inkludert alternativ tekst &lt;alt&gt; for bilder.). Vi brukte korrekt HTML-struktur
+          (f.eks. &lt;nav&gt;, &lt;article&gt;, &lt;header&gt;, &lt;footer&gt;).
+          Ved å bruke passende HTML-elementer for ulike innholdstyper, forbedret vi lesbarheten for blinde og de som er avhengige av stemme-til-tekst-funksjoner.
+        </p>
+      </div>
     </article>
-    </section>
-    </div>
-
+  </section>
+</main>
     
 <!-- Footer -->
 <footer class="footer">

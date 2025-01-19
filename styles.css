@@ -12,11 +12,6 @@ body {
   background-color: #ffffff; 
 }
 
-/* ACTIVITY PAGE BODY BACKGROUND (only applies if <body class="activity-body">) */
-.activity-body {
-  background-color: #F6F9FC; /* Example different color */
-}
-
 /* NAVIGATION (using <nav>) */
 nav {
   width: 100%;
@@ -39,9 +34,9 @@ nav .nav-btn {
 }
 
 .nav-btn label .menu-icon {
-  font-size: 4rem;   /* Increase the size */
-  cursor: pointer;   /* Optional: show pointer on hover */
-  line-height: 1;    /* Tighten line-height if needed */
+  font-size: 4rem;  
+  cursor: pointer;   
+  line-height: 1;    
 }
 
 nav .nav-links {
@@ -63,43 +58,50 @@ nav .nav-links a {
 }
 
 /* HERO SECTION */
-.hero-section {
+.hero {
   background-color: #00192C;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
   box-sizing: border-box;
 }
 
-.grid-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
+.hero figure {
+  flex: 1;
+  margin: 0; /* Removes default margin for <figure> */
 }
 
 .hero-image {
   width: 100%;
   height: auto;
+  display: block;
 }
 
-.sub-head {
-  font-style: italic;
-  color: #DBBE81;
-  padding-top: 2.5rem;
+.hero div {
+  flex: 1;
 }
 
-.heading, 
-.text-1 {
-  color: white;
-  padding-top: 0.625rem;
-}
-
-.heading {
+.hero h1 {
   font-size: 2.5rem;
   line-height: 3.125rem;
+  margin: 0.5rem 0;
 }
 
-.text-1 {
+.hero h2 {
+  font-style: italic;
+  color: #DBBE81;
+  margin-top: 2.5rem;
+}
+
+.hero p {
   font-size: 1.25rem;
   line-height: 1.5625rem;
+  margin-top: 0.625rem;
 }
+
 
 /* ABOUT SECTION */
 .section-2 {
@@ -319,7 +321,7 @@ table td span {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%; 
   max-width: 80%; 
-  margin: 0 auto; 
+  margin: 2rem auto; 
 }
 
 .shared-image {
@@ -366,13 +368,6 @@ table td span {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 1.25rem auto;
   max-width: 800px; 
-}
-
-.shared-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
 }
 
 /* FOOTER */
@@ -443,7 +438,15 @@ table td span {
   .hero-section {
     padding: 1.25rem;
   }
-  .grid-row,
+  .hero {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  section {
+    padding: 1.25rem;
+  }
+
   .interest-grid,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -456,6 +459,26 @@ table td span {
   }
   .contact p {
     text-align: center;
+  }
+  .footer {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr; /* Single-column layout */
+    gap: 1.5rem;
+  }
+
+  .footer-grid ul {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-grid ul li {
+    text-align: center; /* Center-align text for better mobile readability */
+  }
+
+  .footer-grid div {
+    text-align: center; /* Ensure the content in divs is center-aligned */
   }
 }
 

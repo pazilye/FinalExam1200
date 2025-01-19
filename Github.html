@@ -4,148 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oslomet - Github</title>
+    <meta name="description" content="Utforsk hvordan vi bruker GitHub for samarbeid, kodehistorikk og effektiv prosjektstyring hos OsloMet.">
 
-    <!-- CSS File LINKING -->
     <link href="styles.css" type="text/css" rel="stylesheet">
 
-    <!-- Fontawesome icon link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 <!-- header -->
 <header>
-<!-- https://codepen.io/jo_Geek/pen/xgbaEr (Reference) -->
-<nav role="navigation" aria-label="Hovedmeny">
-    <!-- Hamburger Checkbox -->
-    <input type="checkbox" id="nav-check" />
+<!-- https://codepen.io/jo_Geek/pen/xgbaEr -->
 
-    <!-- Logo/Brand -->
-    <div class="nav-header">
-      <a href="index.html">
-        <img 
-          src="images/logo.svg" 
-          class="logo" 
-          alt="OsloMet-logo: Universitetsmerke med gule linjer" 
-        />
-      </a>
-    </div>
+    <nav role="navigation" aria-label="Hovedmeny">
+      <!-- Hamburger Checkbox -->
+      <input type="checkbox" id="nav-check" />
 
-    <!-- Hamburger Icon -->
-    <div class="nav-btn">
-      <label for="nav-check" aria-label="Åpne eller lukk navigasjonsmenyen">
-        <span class="menu-icon">&#9776;</span>
-      </label>
-    </div>
+      <!-- Logo/Brand -->
+      <div class="nav-header">
+        <a href="index.html">
+          <img
+            src="images/logo.svg"
+            class="logo"
+            alt="OsloMet-logo"
+          />
+        </a>
+      </div>
 
-    <!-- Navigation Links -->
-    <div class="nav-links">
+      <!-- Hamburger Icon -->
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span class="menu-icon">&#9776;</span>
+        </label>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="nav-links">
         <a href="Sightseeing.html">Sight-seeing</a>
         <a href="Accessibility.html">Accessibility</a>
         <a href="Github.html">GitHub</a>
-    </div>
-  </nav>
-</header>
+      </div>
+    </nav>
+  </header>
 
 
 <!-- Hovedinnhold -->
 
-<section class="main-section">
+<main class="main-section">
     <div class="shared-div">
       <h1>Github</h1>
-      <p>I dette prosjektet brukte vi GitHub for å lagre koden vår, spore endringer, og samarbeide effektivt som et team. 
+      <p>
+        I dette prosjektet brukte vi GitHub for å lagre koden vår, spore endringer, og samarbeide effektivt som et team. 
         <br>
         Hver av oss jobbet på våre egne brancher og brukte pull requests for å foreslå endringer. 
-        <br>Vi dokumenterte også fremdrift og oppgaver gjennom GitHub Issues.</p>
+        <br>
+        Vi dokumenterte også fremdrift og oppgaver gjennom GitHub Issues.
+      </p>
     </div>
-</section>
 
-<div class="shared-sections">
-    <section class="github">    
-        <article>
-        <div class="shared-div">
-            <img src="images/GithubcommitPaziliye.png" class="shared-image" alt="bildet av commit-historikk i github">
-            <!-- image source: private screenshot-->
-            <div class="shared-content">
-                <h2>Fordeler med GitHub</h2>
-                <p>Liste opp noen av fordelene vi opplevde med GitHub:</p>
-                <ul>
-                    <li>Effektiv sporing av endringer med commit-historikk.</li>
-                    <li>Muligheten til å samarbeide i sanntid uten å overskrive hverandres arbeid.</li>
-                    <li>Bruk av Issues for å spore oppgaver og prioritere arbeidet.</li>
-                </ul>
-            </div>
-        </div>
-       </article>
-    </section>
-
-    <section class="github">
-        <article>
-        <div class="shared-div">
-            <img src="images/GithubchangePaziliye.png" class="shared-image" alt="bildet av spesifikk endringer i github">
-            <!-- image source: private screenshot-->
-            <div class="shared-content">
-                <h2>Hvordan brukte vi Git med GitHub</h2>
-                <p>For å jobbe med Git og GitHub fulgte vi disse enkle trinnene:</p>
-                <ol>
-                    <li>Klon prosjektet til din lokale maskin: 
-                        <code>git clone &lt;url-til-repositoriet&gt;</code></li>
-                    <li>Opprett en ny branch for endringene dine: 
-                        <code>git checkout -b &lt;branch-navn&gt;</code></li>
-                    <li>Sjekk hvilke filer som er endret: 
-                        <code>git status</code></li>
-                    <li>Legg endringer til staging: 
-                        <code>git add .</code></li>
-                    <li>Lag en commit med en beskrivelse: 
-                        <code>git commit -m "Kort beskrivelse av endringen"</code></li>
-                    <li>Push endringene til GitHub: 
-                        <code>git push origin &lt;branch-navn&gt;</code></li>
-                    <li>Opprett en pull request fra GitHub for å slå sammen endringene med `main`.</li>
-                </ol>
-            </div>
-            </div>
-        </article>
-    </section>
-
-
-    <section class="github">
-        <article>
-        <div class="shared-div">
-            <img src="images/GithubcommitRamile.png" class="shared-image" alt="bildet av merge historikk">
-            <!-- Image source: private screenshot-->
-            <div class="shared-content">
-                <h2>Konflikter og Løsninger</h2>
-                <p>I prosjektet møtte vi to hovedutfordringer som skapte konflikter:</p>
-                <ul>
-                    <li>
-                        <strong>Direkte commits til main:</strong> Enkelte glemte å oppdatere eller pull endringer fra `main` før de gjorde nye commits, noe som førte til konflikter ved merging. 
-                        <br>
-                        <strong>Løsning:</strong> Vi innførte en regel om alltid å oppdatere `main` først og teste endringer i en egen branch før de ble pushet.
-                    </li>
-                    <li>
-                        <strong>Store bildefiler:</strong> Noen bilder hadde for stor filstørrelse, noe som skapte problemer ved commits og push. 
-                        <br>
-                        <strong>Løsning:</strong> Vi optimaliserte bildene med verktøy som TinyPNG før de ble lagt til i prosjektet.
-                    </li>
-                </ul>
-            </div>
-        </div>
-        </article>
-    </section>
-
-    <section class="github">
-        <article>
-        <div class="shared-div">
-            <img src="images/GithubchangeRamile.png" class="shared-image" alt="bildet av commit-historikk to">
-            <!-- image source: private screenshot-->
-            <div class="shared-content">
-                <h2>Eksempler på Commit-Historikk</h2>
-                <p>Commit-historikken vår viser hvordan vi jobbet systematisk med hyppige og små oppdateringer gjennom prosjektet.
-                    <br>Dette hjalp oss med å spore endringer og raskt identifisere feil når de oppsto.</p>
-            </div>   
-        </div>
-        </article>
-    </section>
-
+  
+  <section class="shared-sections">
+    <article class="shared-div">
+      <img src="images/GithubcommitPaziliye.png" class="shared-image" alt="Bildet av commit-historikk i GitHub">
+      <div class="shared-content">
+        <h2>Fordeler med GitHub</h2>
+        <p>Liste opp noen av fordelene vi opplevde med GitHub:</p>
+        <ul>
+          <li>Effektiv sporing av endringer med commit-historikk.</li>
+          <li>Muligheten til å samarbeide i sanntid uten å overskrive hverandres arbeid.</li>
+          <li>Bruk av Issues for å spore oppgaver og prioritere arbeidet.</li>
+        </ul>
+      </div>
+    </article>
+  
+    <article class="shared-div">
+      <img src="images/GithubchangePaziliye.png" class="shared-image" alt="Bildet av spesifikke endringer i GitHub">
+      <div class="shared-content">
+        <h2>Hvordan brukte vi Git med GitHub</h2>
+        <p>For å jobbe med Git og GitHub fulgte vi disse enkle trinnene:</p>
+        <ol>
+          <li>Klon prosjektet til din lokale maskin: <code>git clone &lt;url-til-repositoriet&gt;</code></li>
+          <li>Opprett en ny branch for endringene dine: <code>git checkout -b &lt;branch-navn&gt;</code></li>
+          <li>Sjekk hvilke filer som er endret: <code>git status</code></li>
+          <li>Legg endringer til staging: <code>git add .</code></li>
+          <li>Lag en commit med en beskrivelse: <code>git commit -m "Kort beskrivelse av endringen"</code></li>
+          <li>Push endringene til GitHub: <code>git push origin &lt;branch-navn&gt;</code></li>
+          <li>Opprett en pull request fra GitHub for å slå sammen endringene med `main`.</li>
+        </ol>
+      </div>
+    </article>
+  
+    <article class="shared-div">
+      <img src="images/GithubcommitRamile.png" class="shared-image" alt="Bildet av merge-historikk i GitHub">
+      <div class="shared-content">
+        <h2>Konflikter og Løsninger</h2>
+        <p>I prosjektet møtte vi to hovedutfordringer som skapte konflikter:</p>
+        <ul>
+          <li>
+            <strong>Direkte commits til main:</strong> Enkelte glemte å oppdatere eller pull endringer fra `main` før de gjorde nye commits, noe som førte til konflikter ved merging.
+            <br>
+            <strong>Løsning:</strong> Vi innførte en regel om alltid å oppdatere `main` først og teste endringer i en egen branch før de ble pushet.
+          </li>
+          <li>
+            <strong>Store bildefiler:</strong> Noen bilder hadde for stor filstørrelse, noe som skapte problemer ved commits og push.
+            <br>
+            <strong>Løsning:</strong> Vi optimaliserte bildene med verktøy som TinyPNG før de ble lagt til i prosjektet.
+          </li>
+        </ul>
+      </div>
+    </article>
+  
+    <article class="shared-div">
+      <img src="images/GithubchangeRamile.png" class="shared-image" alt="Bildet av commit-historikk">
+      <div class="shared-content">
+        <h2>Eksempler på Commit-Historikk</h2>
+        <p>
+          Commit-historikken vår viser hvordan vi jobbet systematisk med hyppige og små oppdateringer gjennom prosjektet.
+          <br>
+          Dette hjalp oss med å spore endringer og raskt identifisere feil når de oppsto.
+        </p>
+      </div>
+    </article>
+  </section>
+</main>
 
 <!-- Footer -->
 
@@ -187,8 +167,3 @@
 </footer>
 </body>
 </html>  
-
-
-// this is a comment from the teacher : HTML less-than-good: “Main” is an element that should encapsulate the main parts of a page, not just a small part     
-
-how should i change it based on his comments  ? 
